@@ -1,1 +1,88 @@
-test ok
+
+.hunters {
+  text-align: center;
+}
+
+.hunterBlock {
+  display: inline-block;
+  position: relative;
+}
+
+.imageHunter{
+opacity:0.5;
+width: 30vh;
+height: 35vh;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.reward{
+  font-size: 2vh;
+  color: black;
+  text-align: center;
+  position: absolute; 
+  width: 87%;
+  top: 3%;
+  padding: 1vh;
+  margin: 0 1vh;
+  border-radius: 15px;
+  background-color: RGB(255,255,255, 0.8);
+  z-index: 2;
+}
+
+.hunterName {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-top: -40%;
+    width: 100%;
+    font-size: 4vh;
+    z-index: 2;
+  }
+
+.dead {
+  position: absolute;
+  color: black;
+  text-align: center;
+  margin-top: 50%;
+  width: 100%;
+  font-size: 4vh;
+  z-index: 2;
+}
+
+.huntersFrame:hover .dead{
+    display: none;
+}
+
+.huntersFrame:hover p {
+    color:white;
+    text-align: center;
+    position: absolute; 
+    z-index: 2;
+    font-size: 2vh;
+    padding: 0;
+    margin: 0;
+    top: 90%;
+}
+
+.huntersFrame:hover .reward {
+  display: none;
+}
+
+.coins{
+  color: rgb(243, 124, 12);
+}
+
+.huntersFrame:hover img {
+    opacity:1;
+}
+
+.hunterdescription p {
+  position: absolute;
+  color: black;
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+  font-size: 2vh;
+}
+
